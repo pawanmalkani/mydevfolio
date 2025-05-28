@@ -26,9 +26,9 @@ function App() {
   const skills = [
     { logo: htmlLogo, label: "HTML5", target: 95, color: "#e34c26", },
     { logo: cssLogo,label: "Css3", target: 95, color: "#264de4" },
-    { logo: jsLogo, label: "Javsscript",target: 90, color: "#f0db4f" },
+    { logo: jsLogo, label: "Javascript",target: 90, color: "#f0db4f" },
     { logo: reactLogo,label: "ReactJS", target: 100, color: "#61DBFB" },
-    { logo: nodeLogo, label: "Node js",target: 80, color: "#68A063" },
+    { logo: nodeLogo, label: "NodeJs",target: 80, color: "#68A063" },
     { logo: csharpLogo,label: "c++", target: 75, color: "#5585B4" },
     { logo: gitLogo,label: "Git", target: 85, color: "#F05133" },
     { logo: mongodbLogo,label: "Mongodb", target: 85, color: "#499D4A" },
@@ -305,7 +305,7 @@ function App() {
         <div className="myresume text-base sm:text-xl text-black font-mono rounded-xl shadow-lg px-4 sm:px-8 lg:px-16">
           <h1 className="text-3xl sm:text-4xl mt-12 text-center font-bold mb-7">Skills</h1>
           <div className="min-h-screen bg-white p-4">
-            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center text-6xl">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 place-items-center text-6xl summary text-2xl">
               {skills.map((skill, idx) => (
                 <CircularProgress
                   key={idx}
