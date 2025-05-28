@@ -24,17 +24,17 @@ import './App.css'
 function App() {
 
   const skills = [
-    { logo: htmlLogo, target: 95, color: "#e34c26", },
-    { logo: cssLogo, target: 95, color: "#264de4" },
-    { logo: jsLogo, target: 90, color: "#f0db4f" },
-    { logo: reactLogo, target: 100, color: "#61DBFB" },
-    { logo: nodeLogo, target: 80, color: "#68A063" },
-    { logo: csharpLogo, target: 75, color: "#5585B4" },
-    { logo: gitLogo, target: 85, color: "#F05133" },
-    { logo: mongodbLogo, target: 85, color: "#499D4A" },
-    { logo: boostraplogo, target: 90, color: "#59294E" },
-    { logo: mysqlLogo, target: 80, color: "#6A7E91" },
-    { logo: reduxLogo, target: 95, color: "#764ABC" },
+    { logo: htmlLogo, label: "HTML5", target: 95, color: "#e34c26", },
+    { logo: cssLogo,label: "Css3", target: 95, color: "#264de4" },
+    { logo: jsLogo, label: "Javsscript",target: 90, color: "#f0db4f" },
+    { logo: reactLogo,label: "ReactJS", target: 100, color: "#61DBFB" },
+    { logo: nodeLogo, label: "Node js",target: 80, color: "#68A063" },
+    { logo: csharpLogo,label: "c++", target: 75, color: "#5585B4" },
+    { logo: gitLogo,label: "Git", target: 85, color: "#F05133" },
+    { logo: mongodbLogo,label: "Mongodb", target: 85, color: "#499D4A" },
+    { logo: boostraplogo,label: "Boostrap", target: 90, color: "#59294E" },
+    { logo: mysqlLogo,label: "MySql", target: 80, color: "#6A7E91" },
+    { logo: reduxLogo,label: "Redux", target: 95, color: "#764ABC" },
   ];
 
   useEffect(() => {
@@ -312,6 +312,7 @@ function App() {
                   target={skill.target}
                   logo={skill.logo}
                   color={skill.color}
+                  label={skill.label}
                 />
               ))}
             </div>

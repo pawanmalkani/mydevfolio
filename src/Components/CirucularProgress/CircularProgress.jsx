@@ -156,6 +156,8 @@ import { useEffect, useRef, useState } from "react";
 
 const CircularProgress = ({
   logo,
+  label,
+  target,
   color = "#3b82f6",
   size = 140,
 }) => {
@@ -165,15 +167,7 @@ const CircularProgress = ({
   const radius = size / 2 - 10;
   const circumference = 2 * Math.PI * radius;
 
-  const getLabel = (path) => {
-    const parts = path.split("/");
-    const file = parts[parts.length - 1];
-    return file.split(".")[0].replace(/[-_]/g, " ");
-  };
-
-  const label = getLabel(logo);
-
-  // Trigger animation when in view
+  // Intersection Observer to trigger animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -226,10 +220,11 @@ const CircularProgress = ({
         <div className="absolute inset-0 flex items-center justify-center">
           <img
             src={logo}
-            alt="Logo"
-            className={`w-16 h-16 object-contain transition-all duration-1000 ease-in-out transform ${
-              isVisible ? "opacity-100 scale-100" : "opacity-0 scale-75"
-            }`}
+            alt={label}
+            className={`w-16 h-16 object-contain transition-all duration-1000 ease-in-out transform ${isVisible
+              ? "opacity-100 scale-100"
+              : "opacity-0 scale-75"
+              }`}
           />
         </div>
       </div>
@@ -238,5 +233,6 @@ const CircularProgress = ({
     </div>
   );
 };
+
 
 export default CircularProgress;
