@@ -1,0 +1,84 @@
+#root {
+  text-align: center;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.fullname {
+  font-family: 'PlaywriteMagyarorszag', sans-serif;
+
+}
+
+@font-face {
+  font-family: 'PlaywriteMagyarorszag';
+  src: url('Fonts/PlaywriteHU-Regular.ttf') format('truetype');
+}
+
+.workexp {
+  font-family: 'Abel', sans-serif;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 10px 15px;
+  background: rgb(230, 230, 230);
+  border-radius: 4px;
+
+}
+
+.eduexp {
+  font-family: 'Abel', sans-serif;
+  display: inline-block;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 10px 15px;
+  background: rgb(230, 230, 230);
+  border-radius: 4px;
+
+}
+@font-face {
+  font-family: 'Abel';
+  src: url('Fonts/Abel-Regular.ttf') format('truetype');
+}
+
+.summary {
+  font-family: 'Abel', sans-serif;
+
+}
+@font-face {
+  font-family: 'Abel';
+  src: url('Fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
+}
+
+.gradient-animated {
+  background: #00e1ff;
+  background: radial-gradient(circle, rgba(0, 225, 255, 1) 0%, rgba(175, 222, 222, 1) 100%);
+  background-size: 600% 600%;
+  animation: gradientMove 10s ease infinite;
+}
+
+.expicon{
+  fill: #007bff; /* will only work if SVG uses currentColor or fill directly */
+  transition: transform 0.3s ease;
+}
+.slide-in-left {
+  animation: slideInFromLeft 1.5s ease-out forwards;
+}
+
+.slide-in-right {
+  animation: slideInFromRight 1.5s ease-out forwards;
+}
+@keyframes slideInFromLeft {
+  0% { transform: translateX(-100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInFromRight {
+  0% { transform: translateX(100%); opacity: 0; }
+  100% { transform: translateX(0); opacity: 1; }
+}
