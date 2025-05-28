@@ -13,7 +13,7 @@ import mongodbLogo from './Images/mongodb.png';
 import reduxLogo from './Images/redux.png';
 import mysqlLogo from './Images/mysql.png';
 import boostraplogo from './Images/boostrap.png';
-import coverpic from './Images/PawanMalkanii.jpg';
+import coverpic from './Images/PawanMalkani.jpg';
 import EmailService from './Components/EmailService/EmailService';
 import { ToastContainer } from "react-toastify";
 
