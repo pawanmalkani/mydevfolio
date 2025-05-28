@@ -151,13 +151,11 @@
 
 // export default CircularProgress;
 
-
 import { useEffect, useRef, useState } from "react";
 
 const CircularProgress = ({
   logo,
   label,
-  target,
   color = "#3b82f6",
   size = 140,
 }) => {
@@ -167,7 +165,6 @@ const CircularProgress = ({
   const radius = size / 2 - 10;
   const circumference = 2 * Math.PI * radius;
 
-  // Intersection Observer to trigger animation
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
@@ -224,7 +221,7 @@ const CircularProgress = ({
             className={`w-16 h-16 object-contain transition-all duration-1000 ease-in-out transform ${isVisible
               ? "opacity-100 scale-100"
               : "opacity-0 scale-75"
-              }`}
+            }`}
           />
         </div>
       </div>
@@ -233,6 +230,5 @@ const CircularProgress = ({
     </div>
   );
 };
-
 
 export default CircularProgress;
