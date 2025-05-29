@@ -55,7 +55,7 @@ const ProjectCard = ({ imageUrl, title, description }) => {
       />
 
       {/* Radial Gradient Overlay */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle,_rgba(0,225,255,1)_0%,_rgba(175,222,222,1)_100%)] mix-blend-overlay" />
+      <div className="absolute inset-0 bg-[#1a1a1a] mix-blend-overlay" />
 
       {/* Hover Dark Overlay (desktop only) */}
       <div

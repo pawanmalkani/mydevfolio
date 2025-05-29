@@ -439,7 +439,7 @@ function App() {
           </div>
         </div>
 
-        <div className="text-xl text-black font-mono rounded-xl shadow-lg lg:mb-25 lg:pb-5 pb-5 bg-[radial-gradient(circle,_rgba(0,225,255,1)_0%,_rgba(175,222,222,1)_100%)]" >
+        <div className="text-xl text-gray-300 font-mono rounded-xl shadow-lg lg:mb-25 lg:pb-5 pb-5 bg-[#3E3E3E]" >
           <h1 className="text-4xl mt-12 text-center robotoslap mb-7 pt-6">Hire Me!</h1>
           <span className='text-center block leading-10 pl-8 pr-8 lg:pl-45 lg:pr-45 lg:pb-3 summary'>
             Hire Me as a developer who values both creativity and structure. I take pride in building projects that are not only visually appealing
