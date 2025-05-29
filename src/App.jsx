@@ -39,6 +39,16 @@ function App() {
     { logo: reduxLogo, label: "Redux", target: 95, color: "#764ABC" },
   ];
 
+  const preloadImage = (url) => {
+    const link = document.createElement('link');
+    link.rel = 'preload';
+    link.as = 'image';
+    link.href = url;
+    document.head.appendChild(link);
+  };
+
+  preloadImage(bgImage);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -168,13 +178,17 @@ function App() {
           </div>
         </div> */}
 
-        <div className="flex flex-col lg:flex-row w-full h-full rounded-xl justify-center shadow-lg min-h-screen bg-cover bg-center"
-        style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
+        <div
+          className="flex flex-col lg:flex-row w-full min-h-screen justify-center items-center bg-gray-900 bg-no-repeat bg-cover bg-center relative shadow-lg transition-all duration-300 ease-in-out"
+          style={{
+            backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})`,
+          }}
+        >
 
           {/* IMAGE SECTION */}
           <div
             className="w-full lg:w-1/2 flex flex-col items-center justify-center p-10"
-            
+
           >
             <img
               className="w-60 h-60 rounded-full object-cover mt-10 object-top"
@@ -306,8 +320,8 @@ function App() {
               </h1>
             </div>
 
-            <div className="relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto animate-on-scroll-bottom"
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
+            <div className="relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto animate-on-scroll-bottom bg-no-repeat bg-[center_20%] lg:bg-center bg-cover"
+              style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 ">
 
                 <div className="flex flex-col lg:ml-48 summary" >
@@ -333,8 +347,8 @@ function App() {
               </h1>
             </div>
 
-            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto"
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
+            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto bg-no-repeat bg-[center_20%] lg:bg-center bg-cover"
+              style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
 
                 <div className="flex flex-col lg:ml-40 summary" >
@@ -352,8 +366,8 @@ function App() {
               </div>
             </div>
 
-            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto"
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
+            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto bg-no-repeat bg-[center_20%] lg:bg-center bg-cover"
+              style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
 
                 <div className="flex flex-col lg:ml-22 summary">
@@ -371,8 +385,8 @@ function App() {
               </div>
             </div>
 
-            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto"
-            style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
+            <div className="animate-on-scroll-bottom relative z-10 mt-10 p-6 sm:p-8 shadow-md rounded-xl border border-gray-200 w-full max-w-4xl mx-auto bg-no-repeat bg-[center_20%] lg:bg-center bg-cover"
+              style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(${bgImage})` }}>
               <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6">
 
                 <div className="flex flex-col lg:ml-50 summary ">
