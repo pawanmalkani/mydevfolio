@@ -55,6 +55,15 @@
   src: url('Fonts/PT_Sans/PTSans-Regular.ttf') format('truetype');
 }
 
+.robotoslap{
+  font-family: 'robotoslaps', sans-serif;
+}
+@font-face{
+  font-family: 'robotoslaps';
+    src: url('Fonts/RobotoSlab-VariableFont_wght.ttf') format('truetype');
+
+}
+
 .gradient-animated {
   background: #00e1ff;
   background: radial-gradient(circle, rgba(0, 225, 255, 1) 0%, rgba(175, 222, 222, 1) 100%);
@@ -66,19 +75,20 @@
   fill: #007bff; /* will only work if SVG uses currentColor or fill directly */
   transition: transform 0.3s ease;
 }
-.slide-in-left {
-  animation: slideInFromLeft 1.5s ease-out forwards;
+/* Subtle bottom-to-top animation */
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(40px); /* subtle shift from bottom */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
-.slide-in-right {
-  animation: slideInFromRight 1.5s ease-out forwards;
-}
-@keyframes slideInFromLeft {
-  0% { transform: translateX(-100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
+/* Animation utility class */
+.slide-in-bottom {
+  animation: slideInFromBottom 1.5s ease-out forwards;
 }
 
-@keyframes slideInFromRight {
-  0% { transform: translateX(100%); opacity: 0; }
-  100% { transform: translateX(0); opacity: 1; }
-}
