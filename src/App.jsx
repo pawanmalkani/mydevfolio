@@ -17,6 +17,7 @@ import coverpic from './Images/PawanMalkani.jpg';
 import EmailService from './Components/EmailService/EmailService';
 import { ToastContainer } from "react-toastify";
 import bgImage from './Images/bg3.jpg'; // Replace with actual image path
+import ScrollToTopButton from './Components/ScrollToTopButton/ScrollToTopButton';
 
 
 
@@ -456,7 +457,7 @@ function App() {
         <ToastContainer />
       </div>
 
-
+      <ScrollToTopButton />
 
     </>
   )
