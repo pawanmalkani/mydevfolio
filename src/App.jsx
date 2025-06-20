@@ -298,7 +298,7 @@ function App() {
             Hi, I’m Pawan Malkani — a Software Engineer based in Mumbai with over 4 years of experience in building scalable
             software systems and web applications.I specialize in JavaScript, React.js, React Native, and C++, with a strong
             focus on delivering clean, efficient, and maintainable code.</span>
-          <span className='text-left block leading-10 mt-1.5 pl-8 pr-8 lg:pl-45 lg:pr-45 lg: pb-3 summary'>
+          <span className='text-left block leading-10 mt-1.5 pl-8 pr-8 lg:pl-45 lg:pr-45 lg:pb-3 summary'>
             Currently, I work at Tata Advanced Systems Limited (TASL), where I contribute to front-end, full-stack, and C++
             application development—primarily in the defense domain. My work revolves around crafting solutions that enhance
             user experience and deliver real-world value.</span>
