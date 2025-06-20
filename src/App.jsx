@@ -294,14 +294,17 @@ function App() {
 
         <div className="text-xl text-black font-mono rounded-xl shadow-lg lg:mt-25 lg:mb-25 lg:pb-5 pb-5">
           <h1 className="text-4xl mt-12 text-center mb-7 robotoslap">Hello There!</h1>
-          <span className='text-center block leading-10 pl-8 pr-8 lg:pl-45 lg:pr-45 lg:pb-3 summary'>
-            Hi, I’m Pawan Malkani — a Software Engineer based in Mumbai with 4+ years of experience building scalable software systems and web applications.
-            I specialize in JavaScript, React.js, React Native, and C++.</span>
-          <span className='text-center block leading-10 mt-1.5 pl-8 pr-8 lg:pl-45 lg:pr-45 lg: pb-3 summary'>
-            Currently at Tata Advanced Systems Limited (TASL), I focus on front-end, full-stack, and C++ application development, especially
-            in the defense domain. I’m passionate about writing clean, efficient code and crafting solutions that improve user experience and add real value..</span>
-          <span className='text-center block leading-10 mt-1.5 pl-8 pr-8 pb-6 lg:pl-45 lg:pr-45 lg:Pb-4 summary'>
-            I thrive in collaborative environments, love solving complex problems, and am always looking to learn and grow..</span>
+          <span className='text-left block leading-10 pl-8 pr-8 lg:pl-45 lg:pr-45 lg:pb-3 summary'>
+            Hi, I’m Pawan Malkani — a Software Engineer based in Mumbai with over 4 years of experience in building scalable
+            software systems and web applications.I specialize in JavaScript, React.js, React Native, and C++, with a strong
+            focus on delivering clean, efficient, and maintainable code.</span>
+          <span className='text-left block leading-10 mt-1.5 pl-8 pr-8 lg:pl-45 lg:pr-45 lg: pb-3 summary'>
+            Currently, I work at Tata Advanced Systems Limited (TASL), where I contribute to front-end, full-stack, and C++
+            application development—primarily in the defense domain. My work revolves around crafting solutions that enhance
+            user experience and deliver real-world value.</span>
+          <span className='text-left block leading-10 mt-1.5 pl-8 pr-8 pb-6 lg:pl-45 lg:pr-45 lg:Pb-4 summary'>
+            I thrive in collaborative, fast-paced environments and enjoy tackling complex technical challenges. I'm passionate
+            about continuous learning and alwayseager to grow as a developer and problem-solver.</span>
 
           <div className="icons mt-1 flex justify-center space-x-4 mb-5 text-5xl">
             {SocialIcons()}
@@ -443,9 +446,10 @@ function App() {
         <div className="text-xl text-gray-300 font-mono rounded-xl shadow-lg lg:mb-25 lg:pb-5 pb-5 bg-[#3E3E3E]" >
           <h1 className="text-4xl mt-12 text-center robotoslap mb-7 pt-6">Hire Me!</h1>
           <span className='text-center block leading-10 pl-8 pr-8 lg:pl-45 lg:pr-45 lg:pb-3 summary'>
-            Hire Me as a developer who values both creativity and structure. I take pride in building projects that are not only visually appealing
-            but also well-organized and easy to maintain. With a focus on user experience and reliable performance, I aim to deliver work that
-            helps your business grow and your users stay engaged.
+            Hire me as a developer who values both creativity and structure.
+            I take pride in building projects that are not only visually appealing but also well-structured, maintainable,
+            and scalable. With a strong focus on user experience and reliable performance, my goal is to deliver solutions
+            that drive business growth and keep users engaged.
           </span>
         </div>
       </div>
